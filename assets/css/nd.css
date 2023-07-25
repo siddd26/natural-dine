@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/* Content Text */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+
+/* :root{
+
+} */
+
+
+/* Common wali CSS starts */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* height: 200vh; */
+  padding: 0px;
+  margin: 0%;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 1px;
+  position: sticky;
+  top: 0px;
+  /* background-color: #fff; */
+  z-index: 10;
+  align-items: center;
+  width: 100vw;
+  background-color: #ffffff;
+  /* color: #368e00; */
+}
+
+.logo {
+  /* padding: 0% 2%; */
+  /* font-family: 'Prompt'; */
+  height: 70px;
+  width: 30%;
+  font-family: 'Abril Fatface', cursive;
+  
+}
+
+.logo img {
+  height: 70px;
+  border: solid 2px white;
+}
+
+.navbarr {
+  position: sticky;
+  float: right;
+}
+
+.navbarr,
+ul {
+  margin: auto 0;
+  padding: 0px;
+  /* width: 100%; */
+}
+
+.navbarr li {
+  float: left;
+  list-style: none;
+  padding: 8px 8px;
+  /* font-size: large; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  /* transition: text-decoration-color 300ms; */
+  
+}
+
+.navbarr li a {
+  text-decoration: none;
+  color: rgb(32, 174, 0);
+  padding: 3px 5px;
+  transition: background color 1.2s;
+  border-radius: 7px;
+}
+
+.navbarr li a:hover{
+  background: #2aa71e;
+  color: white;
+
+}
+
+.navbarr li:hover {
+  color: rgb(187, 181, 0);
+  /* text-decoration: underline; */
+  /* text-shadow: 1px 2px 10px white; */
+  /* text-decoration-color: rgba(255, 255, 255, 1); */
+}
+
+
+
+.active {
+  color: rgb(131, 126, 0)
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  /* font-size: 36px; */
+  margin-left: 50px;
+}
+
+.openbtn {
+  /* font-size: 4vw; */
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 3px 9px;
+  /* border: none; */
+  border-radius: 10px;
+  float: right;
+  display: none;
+  margin: 10px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+.bg-img{
+  background-image: url(../images/bg-img.png);
+  background-position: center;
+}
+.whitish{
+  background-color: #ffffffbe;
+  border-radius: 7px;
+}
+
+section .img {
+  background-color: #ffffff5e;
+  width: 40%;
+  box-shadow: 0px 0px 2px 0px;
+  margin: 3px;
+  border-radius: 7px;
+}
+
+section .desc {
+  box-shadow: 0px 0px 1px 0px;
+  width: 60%;
+  background-color: #ffffff99;
+  border-radius: 7px;
+  margin: 3px;
+}
+
+.container h3{
+  color: rgb(74, 71, 0);
+}
+
+h3{
+  text-decoration: underline;
+  text-decoration-color: rgb(167, 162, 0);
+}
+
+#home{
+  width: 65%;
+}
+
+/* contact css starts */
+.contact-box{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0% 4%;
+  padding: 2% 6%;
+}
+
+.contact-content{
+  display: flex;
+  /* font-size: 2vw; */
+  justify-content: space-evenly;
+}
+
+.form{
+  align-items: center;
+  justify-content: center;
+  /* width: 50%; */
+}
+
+form input, form textarea, form button {
+  /* font-size: 1vw; */
+  /* text-align: center; */
+  font-family: Prompt;
+  border: solid rgb(131, 126, 0);;
+  border-width: 0 0 3px 0;
+  border-style: solid;
+  width: 80%;
+  padding: 5px 15px;
+  margin: 3%;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#submit:hover ,textarea:hover, input:hover{
+  background: rgb(218, 255, 153);
+}
+#submit{
+  cursor: pointer;
+}
+
+.socials{
+  width: 50%;
+  padding: 5px 15px;
+  /* margin: 3%; */
+  align-self: center;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials h6{
+  margin: 5px;
+}
+
+.fa {
+  padding: 10px 10px;
+  font-size: 20px;
+  width: 40px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #4cc600;
+  color: white;
+}
+
+span a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* contact css ends */
+
+#footer{
+  /* position: sticky; */
+  bottom: 0;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 15px;
+  padding: 1px 10px;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+#footer a{
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+  #home{
+    width: 100%;
+  }
+
+  .logo{
+    width: auto;
+  }
+
+  .navbarr {
+    display: none;
+  }
+
+  .openbtn {
+    display: block;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  section .desc {
+    width: 75%;
+  }
+
+  section .img {
+    width: 100%;
+  }
+
+  section .desc {
+    width: 90%;
+  }
+
+
+  .slideshow-container {
+    width: auto;
+    position: relative;
+    margin: auto;
+  }
+
+  .contact-content{
+    flex-direction: column;
+    margin: auto;
+  }
+  .form, #form{
+    width: 100%;
+    justify-content: center;
+  }
+  .socials{
+    width:90%;
+  }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+
+/* Animations */
+.b-shadow-ani{
+  box-shadow: 0;
+  transition: box-shadow 0.7s;
+  border: 1px solid #eee;
+}
+
+.b-shadow-ani:hover {
+  box-shadow: 3px 3px 8px 1px #888888
+  
+}
+
